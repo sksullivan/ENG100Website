@@ -1,0 +1,72 @@
+#center {
+	position: relative;
+    top: 20%;
+    left: 45%;
+}
+
+#name {
+	position: absolute;
+    top: 100px;
+    left: 0px;
+
+    width: 100px;
+    height: 100px;
+    background: gray;
+
+    line-height: 29px;
+    text-align: center;
+    font-family: kefa;
+    color: white;
+}
+
+.circle {
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    border-radius: 999px;
+}
+
+span {
+	position: relative;
+	top: 0px;
+	line-height: 20px;
+}
+
+.contentbox {
+	border-radius: 15px;
+}
+
+#topr {
+	background: FFF700;
+	position: absolute;
+	height: 100px;
+	width: 230px;
+	top: -15px;
+	left: -15px
+}
+
+#rightb {
+	background: blue;
+	position: absolute;
+	height: 230px;
+	width: 100px;
+	left: 115px;
+	top: 85px;
+}
+
+#bottoml {
+	background: red;
+	position: absolute;
+	height: 100px;
+	width: 230px;
+	left: -115px;
+	top: 215px;
+}
+
+#leftt {
+	background: 00FF00;
+	position: absolute;
+	height: 230px;
+	width: 100px;
+	left: -115px;
+	top: -15px;
+}
