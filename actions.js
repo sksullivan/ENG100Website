@@ -1,75 +1,30 @@
 $(document).ready(function(){
+	console.log($("#rightb").css('padding-top'));
 
-	rightbBlownUp = false;
-	bottomlBlownUp = false;
-	lefttBlownUp = false;
-	toprBlownUp = false;
-
-	$("#rightb").click(function(){
-		if (!rightbBlownUp) {
-			$(this).animate({
-				width:$(window).width()-$(this).offset().left+'px',
-				height: $(window).height()-$(this).offset().top+'px'
-			});
-		} else {
-			$(this).animate({
-				width: 100,
-				height: 230
-			});
-		}
-		rightbBlownUp = !rightbBlownUp;
+	$("#rightb").css({
+		width:$(window).width()-$("#rightb").offset().left+'px',
+		height: $(window).height()-$("#rightb").offset().top-15+'px',
+		top: '+=15',
+		left: '+=15'
 	});
 
-	$("#bottoml").click(function(){
-		if (!bottomlBlownUp) {
-			$(this).animate({
-				left: -$(this).offset().left-115,
-				width: 230+$(this).offset().left,
-				height: $(window).height()-$(this).offset().top+'px'
-			});
-		} else {
-			$(this).animate({
-				left: -115,
-				width: 230,
-				height: 100
-			});
-		}
-		bottomlBlownUp = !bottomlBlownUp;
+	$("#bottoml").css({
+		left: -$("#bottoml").offset().left-115,
+		width: 230+$("#bottoml").offset().left,
+		height: $(window).height()-$("#bottoml").offset().top+'px'
 	});
 
-	$("#leftt").click(function(){
-		if (!lefttBlownUp) {
-			$(this).animate({
-				left: -$(this).offset().left-115,
-				top: -$(this).offset().top-15,
-				width: 100+$(this).offset().left+'px',
-				height: 230+$(this).offset().top+'px'
-			});
-		} else {
-			$(this).animate({
-				left: -115,
-				top: -15,
-				width: 100,
-				height: 230
-			});
-		}
-		lefttBlownUp = !lefttBlownUp;
+	$("#leftt").css({
+		left: -$("#leftt").offset().left-115,
+		top: -$("#leftt").offset().top-15,
+		width: 100+$("#leftt").offset().left+'px',
+		height: 230+$("#leftt").offset().top-15+'px'
+
 	});
 
-	$("#topr").click(function(){
-		if (!toprBlownUp) {
-			$(this).animate({
-				top: -$(this).offset().top-15,
-				width:$(window).width()-$(this).offset().left+'px',
-				height: 100+$(this).offset().top+'px'
-			});
-		} else {
-			$(this).animate({
-				top: -15,
-				width: 230,
-				height: 100
-			});
-		}
-		toprBlownUp = !toprBlownUp;
+	$("#topr").css({
+		top: -$("#topr").offset().top-15,
+		width:$(window).width()-$("#topr").offset().left+'px',
+		height: 100+$("#topr").offset().top-15+'px'
 	});
 });
